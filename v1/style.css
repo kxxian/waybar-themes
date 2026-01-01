@@ -2,8 +2,8 @@
 
 * {
   background-color: @background;
-  /* color: #ff0000; */
-  color: @foreground;
+  color: #92e500;
+  /* color: @foreground; */
 
   border: none;
   border-radius: 0;
@@ -23,9 +23,10 @@
 
 #workspaces button {
   all: initial;
-  padding: 0 6px;
+  padding: 0 3.5px;
   margin: 0 1.5px;
   min-width: 9px;
+  color: #92e500; 
 }
 
 #workspaces button.empty {
@@ -36,7 +37,7 @@
 /* #battery, */
 /* #pulseaudio, */
 /* #custom-omarchy, */
-#custom-screenrecording-indicator,
+/* #custom-screenrecording-indicator, */
 #custom-update {
   min-width: 12px;
   margin: 0 7.5px;
@@ -251,7 +252,7 @@ tooltip {
 #mpris {
 color: @foreground;
 font-size: 10px;
-padding-left: 5px;
+/* padding-left: 10px; */
 padding-top: 2px;
 padding-bottom: 1px;
 animation: repeat;
@@ -265,7 +266,6 @@ animation: repeat;
 @keyframes blink {
     to {
         color: #4a4a4a;
-        
     }
 }
 

@@ -8,13 +8,16 @@
   "modules-left": [
     "custom/omarchy",
     "hyprland/workspaces",
-    "mpris"
+    "custom/update",
+    "custom/screenrecording-indicator"
+    // "mpris"
     // "tray"
   ],
   "modules-center": [
     // "clock",
-    "custom/update",
-    "custom/screenrecording-indicator"
+    // "custom/update",
+    // "custom/screenrecording-indicator",
+    "mpris"
   ],
   "modules-right": [
     // "custom/left-arrow-dark",
@@ -42,8 +45,9 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "default": "󰄰",
-      "active": "",
+      "default": "󰸿",
+      "active": "󰸼",
+      "10": "",
       "focused": ""
     },
     "persistent-workspaces": {
