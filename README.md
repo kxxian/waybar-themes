@@ -5,3 +5,9 @@
 - first creation of my own Waybar config <br>
 
   ![image](https://github.com/kxxian/waybar-themes/blob/main/screenshots/v1-ss-2.png?raw=true)
+
+## Screenshots V2
+
+- inspired to solarized osaka colors <br>
+
+  ![image](https://github.com/kxxian/waybar-themes/blob/main/screenshots/v2-ss.png?raw=true)
