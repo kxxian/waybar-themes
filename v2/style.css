@@ -2,7 +2,8 @@
 
 * {
   /* background-color: @background; */
-  color: @foreground;
+  /* color: @foreground; */
+  color: #eee8d5;
   background-color: #012b36;
   border: none;
   border-radius: 0;
