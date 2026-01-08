@@ -10,4 +10,4 @@
 
 - inspired to solarized osaka colors <br>
 
-  ![image](https://github.com/kxxian/waybar-themes/blob/main/screenshots/new-waybar.png?raw=true)
+  ![image](https://github.com/kxxian/waybar-themes/blob/main/screenshots/v2-ss-2.png?raw=true)
