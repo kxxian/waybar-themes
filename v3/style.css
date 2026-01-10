@@ -1,0 +1,280 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  color: #eee8d5;
+  background-color: #012b36;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: "VictorMono Nerd Font";
+  font-size: 12px;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 3.5px;
+  padding-right: 3px;
+  margin: 1.5px;
+  min-width: 20px;
+  background-color: #b48901;
+}
+
+#workspaces button.empty {
+  opacity: 0.4;
+}
+
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+  margin-left: 5px;
+}
+
+#custom-omarchy {
+  color: #eee8d5;
+  background-color: #00141a;
+  font-size: 18px;
+  font-weight: 900;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+
+#custom-expand-icon {
+  color: #eee8d5;
+}
+
+#pulseaudio {
+  background-color: #012b36;
+  padding-right: 11px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#battery {
+  background-color: #00141a;
+  padding-right: 6px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#network.1 {
+  margin-right: 0px;
+  background-color: #586e75;
+  padding-right: 5px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#cpu {
+  background-color: #b48901;
+  padding-right: 5px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#memory {
+  padding-right: 5px;
+  background-color: #664d00;
+  padding-right: 3px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#temperature {
+  background-color: #332700;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#temperature.critical {
+  color: #7f0000;
+}
+
+#tray {
+  margin-right: 16px;
+  color: #c0c0c0;
+  /* color: #FFAC1C; */
+}
+
+#bluetooth {
+  margin-right: 17px;
+  color: #eee8d5;
+}
+
+#network {
+  margin-right: 13px;
+  color: #eee8d5;
+}
+
+#custom-right-arrow-omarchy {
+  color: #00141a;
+  font-size: 18px;
+  background-color: #b48901;
+}
+
+#custom-right-arrow-workspaces {
+  color: #b48901;
+  font-size: 18px;
+}
+
+#custom-left-arrow-temperature {
+  color: #332700;
+  background-color: #664d00;
+  font-size: 18px;
+}
+
+#custom-left-arrow-memory {
+  color: #664d00;
+  background-color: #b48901;
+  font-size: 18px;
+}
+
+#custom-left-arrow-backlight {
+  color: #657b83;
+  background-color: #332700;
+  font-size: 18px;
+}
+
+#custom-left-arrow-cpu {
+  color: #b48901;
+  font-size: 18px;
+}
+
+#custom-left-arrow-network-1 {
+  color: #586e75;
+  background-color: #657b83;
+  font-size: 18px;
+}
+
+#custom-left-arrow-clock {
+  color: #063642;
+  background-color: #586e75;
+  font-size: 18px;
+}
+
+#custom-left-arrow-audio {
+  color: #012b36;
+  background-color: #063642;
+  font-size: 18px;
+}
+
+#custom-left-arrow-battery {
+  color: #00141a;
+  background-color: #012b36;
+  font-size: 18px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  background-color: #063642;
+  padding-right: 2px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* Specific animation Module */
+
+#custom-screenrecording-indicator {
+  font-size: 12px;
+  padding: 0 2px;
+  margin: 2px;
+  margin-left: 5px;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #eb7087;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+  to {
+    color: @background;
+  }
+}
+
+#backlight {
+  background-color: #657b83;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: 900;
+  color: #eee8d5;
+}
+
+#mpris {
+  margin-left: 10px;
+  font-size: 11.5px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  animation: repeat;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    color: #4a4a4a;
+  }
+}
+
+#battery.warning {
+  color: #c95d0f;
+}
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: #f53c3c;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
