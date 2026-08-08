@@ -21,3 +21,5 @@
 ## Screenshots V4
 
 - credits to [HANCORE-linux](https://github.com/HANCORE-linux), I only tweaked his config a little bit for my own taste. I used Mecha no Onna [V2] (メカの女) them and for waybar I used 6.ba
+
+  ![image](https://github.com/kxxian/waybar-themes/blob/main/screenshots/v4-ss.png?raw=true)
